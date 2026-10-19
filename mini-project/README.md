@@ -4,8 +4,10 @@ Pawsy: a responsive pet adoption landing page built with HTML, CSS, JavaScript a
 
 Pawsy is a responsive, front-end landing page that helps visitors discover pets looking for a home. The site includes a searchable pet directory, filters, favorites, pet detail pop-ups, and an adoption form, all in a warm, friendly design.
 
+## 🌐 Live Demo
 
-
+🔗 **[View Pawsy Website](https://rahmamohammed-rgb.github.io/Depi-Projects-React-Team-2-/
+)**
 ## 👩‍💻 Team – React Team 2
 
 | Member | Role | Contribution |
@@ -21,7 +23,6 @@ Pawsy is a responsive, front-end landing page that helps visitors discover pets 
 - Responsive layout for mobile, tablet and desktop
 - Pet directory with 18 animals (dogs, cats, rabbits and hamsters)
 - Search and filters by animal type, age, size and fur color
-- Favorite button on every pet card
 - Pet details window with an "Apply" button that fills in the adoption form
 - Dark mode
 - Arabic language support
