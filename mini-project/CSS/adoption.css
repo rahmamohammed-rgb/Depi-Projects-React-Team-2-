@@ -1,0 +1,382 @@
+/* Step Card Badge Styling */
+.step-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--bg-soft-green);
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.step-card {
+  border: 1px solid var(--border-light) !important;
+  transition: transform 0.2s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Custom Form Input Styling */
+.custom-form-input {
+  background-color: var(--bg-card) !important;
+  border: 1px solid var(--border-normal) !important;
+  color: var(--text-main) !important;
+  border-radius: 10px !important;
+  font-size: 14px !important;
+}
+
+.custom-form-input:focus {
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 0.2rem rgba(36, 75, 60, 0.15) !important;
+}
+
+/* Invalid State */
+.custom-form-input.is-invalid {
+  border-color: var(--error) !important;
+}
+
+/* Submit Button Style */
+.btn-submit-pawsy {
+  background-color: var(--primary) !important;
+  border: none !important;
+  transition: background-color 0.2s ease;
+}
+
+.btn-submit-pawsy:hover {
+  background-color: var(--primary-hover) !important;
+}
+/* Step Card & Badge Styling */
+.step-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--bg-soft-green);
+  color: var(--primary);
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.step-card {
+  border: 1px solid var(--border-light) !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Custom Form Input Styling */
+.custom-form-input {
+  background-color: var(--bg-page) !important;
+  border: 1px solid var(--border-normal) !important;
+  color: var(--text-main) !important;
+  border-radius: 10px !important;
+  font-size: 14px !important;
+  padding: 12px 16px !important;
+}
+
+.custom-form-input:focus {
+  background-color: var(--bg-page) !important;
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 0.2rem rgba(36, 75, 60, 0.15) !important;
+}
+
+.custom-form-input.is-invalid {
+  border-color: var(--error) !important;
+}
+
+/* Submit Button */
+.btn-submit-pawsy {
+  background-color: var(--primary) !important;
+  border: none !important;
+  transition: background-color 0.2s ease;
+}
+
+.btn-submit-pawsy:hover {
+  background-color: var(--primary-hover) !important;
+}
+/* ========================================== */
+/* Creative Footer Animations & Hover Effects */
+/* ========================================== */
+
+.pawsy-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Footer Links Smooth Hover */
+.footer-link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+.footer-link:hover {
+  color: var(--secondary) !important;
+  transform: translateX(6px); /* تحرك سلس جهة اليمين */
+}
+
+/* Paw Icon Wiggle Animation on Logo Hover */
+.footer-brand:hover .paw-icon {
+  display: inline-block;
+  animation: pawWiggle 0.6s ease infinite alternate;
+}
+
+@keyframes pawWiggle {
+  0% { transform: rotate(0deg) scale(1); }
+  100% { transform: rotate(15deg) scale(1.15); }
+}
+
+/* Beating Heart Animation */
+.footer-heart {
+  color: var(--secondary);
+  animation: heartBeat 1.5s ease-in-out infinite;
+  display: inline-block;
+}
+
+@keyframes heartBeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.25); }
+}
+
+/* Subtle Wagging Text Float */
+.footer-wagging {
+  transition: color 0.3s ease;
+}
+.footer-wagging:hover {
+  color: #fff !important;
+  letter-spacing: 0.5px;
+}
+/* ========================================== */
+/* Creative Animations & Hover Effects        */
+/* ========================================== */
+
+/* 1. Step Cards Floating & Badge Rotation */
+.step-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--bg-soft-green);
+  color: var(--primary);
+  font-weight: 800;
+  font-size: 13px;
+  transition: all 0.5s ease !important;
+}
+
+.step-card {
+  border: 1px solid var(--border-light) !important;
+  transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+}
+
+.step-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(36, 75, 60, 0.1) !important;
+  border-color: var(--secondary) !important;
+}
+
+.step-card:hover .step-badge {
+  transform: rotate(360deg) scale(1.15);
+  background-color: var(--primary) !important;
+  color: var(--text-on-primary) !important;
+}
+
+/* 2. Dog & Cat Image Zoom Effect */
+#about-section .overflow-hidden img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+#about-section .overflow-hidden:hover img {
+  transform: scale(1.06);
+}
+
+/* 3. Dark Green Banner Shimmer & Pulse */
+#cta-banner .rounded-5 {
+  position: relative;
+  overflow: hidden;
+}
+
+#cta-banner .rounded-5::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -150%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(60deg, transparent 30%, rgba(255, 255, 255, 0.08) 50%, transparent 70%);
+  transform: rotate(30deg);
+  animation: shimmerSweep 6s infinite ease-in-out;
+}
+
+@keyframes shimmerSweep {
+  0% { left: -150%; }
+  30%, 100% { left: 150%; }
+}
+
+#cta-banner .btn-lg {
+  animation: btnPulse 2.5s infinite;
+  transition: all 0.3s ease !important;
+}
+
+@keyframes btnPulse {
+  0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(244, 154, 85, 0.4); }
+  50% { transform: scale(1.03); box-shadow: 0 0 0 12px rgba(244, 154, 85, 0); }
+}
+
+#cta-banner .btn-lg:hover {
+  animation: none;
+  transform: translateY(-3px) scale(1.05) !important;
+}
+
+/* 4. Demo Alert Box & Shield Animation (مضبوط بالمللي ليظهر بوضوح) */
+#adoption-form .bg-soft-green {
+  position: relative;
+  border: 1px dashed rgba(36, 75, 60, 0.3) !important;
+  transition: all 0.35s ease !important;
+}
+
+#adoption-form .bg-soft-green:hover {
+  transform: translateY(-5px);
+  background-color: #d0e4cc !important;
+  border-style: solid !important;
+  border-color: var(--primary) !important;
+  box-shadow: 0 12px 25px rgba(36, 75, 60, 0.12) !important;
+}
+
+/* استهداف أيقونة الدرع داخل المربع الأخضر لضمان حركة النبض */
+#adoption-form .bg-soft-green > div:first-child {
+  display: inline-block !important;
+  animation: shieldFloatPulse 1.8s infinite ease-in-out !important;
+  transform-origin: center;
+}
+
+@keyframes shieldFloatPulse {
+  0% { transform: translateY(0) scale(1) rotate(0deg); }
+  50% { transform: translateY(-5px) scale(1.25) rotate(-6deg); }
+  100% { transform: translateY(0) scale(1) rotate(0deg); }
+}
+
+/* 5. Footer Enhancements */
+.pawsy-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-link {
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--secondary) !important;
+  transform: translateX(6px);
+}
+/* ========================================== */
+/* Demo Alert Box & Shield Live Animation     */
+/* ========================================== */
+
+.demo-alert-box {
+  position: relative;
+  border: 1px dashed rgba(36, 75, 60, 0.25) !important;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  cursor: default;
+}
+
+.demo-alert-box:hover {
+  transform: translateY(-6px) scale(1.01) !important;
+  background-color: #d0e4cc !important;
+  border-style: solid !important;
+  border-color: var(--primary) !important;
+  box-shadow: 0 12px 25px rgba(36, 75, 60, 0.15) !important;
+}
+
+/* حركة نبض مستمرة لأيقونة الدرع */
+.shield-icon {
+  display: inline-block !important;
+  animation: shieldLivePulse 1.8s infinite ease-in-out !important;
+  transform-origin: center;
+}
+
+@keyframes shieldLivePulse {
+  0% { transform: translateY(0) scale(1) rotate(0deg); }
+  50% { transform: translateY(-5px) scale(1.25) rotate(-6deg); }
+  100% { transform: translateY(0) scale(1) rotate(0deg); }
+}
+
+/* زيادة سرعة الحركة عند الوقوف بالماوس على الصندوق */
+.demo-alert-box:hover .shield-icon {
+  animation: shieldFastWiggle 0.4s ease-in-out infinite alternate !important;
+}
+
+@keyframes shieldFastWiggle {
+  from { transform: scale(1.3) rotate(-8deg); }
+  to { transform: scale(1.3) rotate(8deg); }
+}
+/* ========================================== */
+/* Form Card & Inputs Creative Animation      */
+/* ========================================== */
+
+/* 1. Form Card Floating & Glowing Hover */
+#adoption-form .card {
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+              box-shadow 0.4s ease, 
+              border-color 0.4s ease !important;
+  position: relative;
+}
+
+#adoption-form .card:hover {
+  transform: translateY(-6px) !important;
+  box-shadow: 0 20px 40px rgba(36, 75, 60, 0.12) !important;
+  border-color: rgba(244, 154, 85, 0.3) !important;
+}
+
+/* 2. Form Inputs Smooth Focus & Lift Animation */
+#adoption-form .custom-form-input,
+#adoption-form .form-control,
+#adoption-form .form-select {
+  transition: all 0.3s ease !important;
+}
+
+#adoption-form .custom-form-input:focus,
+#adoption-form .form-control:focus,
+#adoption-form .form-select:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(36, 75, 60, 0.12) !important;
+  border-color: var(--primary) !important;
+}
+
+/* ========================================== */
+/* Scroll Reveal (works with script.js)       */
+/* ========================================== */
+
+.pawsy-motion-ready .pawsy-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.pawsy-motion-ready .pawsy-reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+main > section {
+  scroll-margin-top: 70px;
+}

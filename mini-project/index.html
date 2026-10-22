@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="Teal Paw Print App Icon (10).png">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/main.css">
+       <link rel="stylesheet" href="CSS/adoption.css">
+    <link rel="stylesheet" href="CSS/rtl.css">
+    <script src="JS/i18n.js"></script>
+</head>
+
+<body>
+                   <!-- ===================== navbar ==================== -->
+   <header class="sticky-top">
+
+       <nav class="navbar navbar-expand-lg ">
+           <div class="container-fluid">
+               <a class="navbar-brand" href="#"><i class ="fa-solid fa-paw me-2"></i> Pawsy<span class="logo-dot">.</span></a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-i18n-aria-label="nav.toggle">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto">
+                   <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#" data-i18n="nav.home">Home</a>
+                   </li>
+                   <li class="nav-item">
+                      <a class="nav-link" href="#" data-i18n="nav.find">Find a pet</a>
+                   </li>
+                   <li class="nav-item">
+                      <a class="nav-link" href="#" data-i18n="nav.care">Pet care</a>
+                   </li>
+                   <li class="nav-item">
+                      <a class="nav-link" href="#"  data-i18n="nav.about">About us</a>
+                   </li>
+                   
+                  </ul>
+
+                  <a class="btn btn-primary" href="#"><span data-i18n="nav.adopt">Adopt a friend</span> <i class="fa-regular fa-heart ms-2"></i></a>
+
+                  <button type="button" id="moon" class="btn border border-rounded me-2 ms-2"><i class="fa-regular fa-moon ms-2 " ></i></button>
+
+                  <select id="languageSelect" class="btn border border-rounded me-2 ms-2" aria-label="Language" data-i18n-aria-label="lang.label">
+                    <option selected value="en" data-i18n="lang.en">English</option>
+                    <option value="ar" data-i18n="lang.ar">Arabic</option>
+                  </select> 
+               </div>
+           </div>
+       </nav>
+
+    </header>
+
+
+   <main>
+                             <!-- ===================== Section 1===================== -->
+      <section class="py-5">
+          <div class="container">
+
+              <div class="row align-items-center g-5">
+
+     
+                <div class="col-12 col-lg-6">
+                   <p class="eyebrow text-uppercase mb-3" data-i18n="hero.eyebrow">Little paws. Big possibilities.</p>
+
+                   <h1 class="mb-3" data-i18n="hero.title">Give Them a Home Full of <span class="text-love">Love.</span></h1>
+
+                   <p class="mb-4" data-i18n="hero.lead">
+                       Sometimes, all it takes is a little love to change a life.<br>
+                       Find your forever friend and start a beautiful new chapter.
+                   </p>
+
+                   <div class="d-flex flex-wrap gap-3 mb-4">
+                      <a href="#" class="btn btn-primary px-4 py-2">
+                        <span data-i18n="hero.cta1">Find your best friend</span> <i class="fa-solid fa-arrow-right ms-2"></i>
+                      </a>
+                      <a href="#" class="btn border px-4 py-2" data-i18n="hero.cta2">Explore pet care</a>
+                   </div>
+
+                   <div class="d-flex align-items-center gap-3">
+                       <div class="avatars d-flex">
+                          <img src="images/dog-milo.webp" alt="" class="rounded-circle">
+                          <img src="images/cat-luna.webp" alt="" class="rounded-circle">
+                          <img src="images/hamster-pearl.webp" alt="" class="rounded-circle">
+                          <img src="images/dog-bella.webp" alt="" class="rounded-circle">
+                          <img src="images/cat-oliver.webp" alt="" class="rounded-circle">
+                          <img src="images/rabbit-coco.webp" alt="" class="rounded-circle">
+                       </div>
+                       <div>
+                         <p class="mb-0 fw-semibold" data-i18n="hero.caption1">Little paws. Big hearts.</p>
+                         <p class="hero-caption mb-0" data-i18n="hero.caption2">A student project with a purpose.</p>
+                       </div>
+                   </div>
+               </div>
+
+      
+              <div class="col-12 col-lg-6">
+                  <div class="hero-images position-relative">
+                      <div class="circle position-absolute"></div>
+
+                         <img src="images/hero-golden-retriever.webp" alt="Golden retriever" data-i18n-alt="hero.altDog" class="dog position-relative">
+
+                         <span class="dog-label position-absolute" data-i18n="hero.dogLabel">Ready for a forever home</span>
+
+                         <img src="images/cat-luna.webp" alt="Orange cat" data-i18n-alt="hero.altCat" class="cat position-absolute">
+
+                         <div class="love-card position-absolute d-flex align-items-center gap-2">
+                            <i class="fa-regular fa-heart"></i>
+                            <p class="mb-0" data-i18n="hero.loveCard">A little love.<br>A whole new life.</p>
+                         </div>
+
+                         <i class="fa-solid fa-paw fa-2x paw position-absolute d-none d-md-block"></i>
+                     </div>
+                  </div>
+               </div>
+
+  
+               <div class="row g-4 mt-5">
+                   <div class="col-12 col-md-4 d-flex align-items-start gap-3">
+                        <i class="fa-regular fa-heart fa-2x"></i>
+                        <div>
+                           <p class="fw-bold mb-0" data-i18n="hero.f1.title">A match that matters</p>
+                           <p class="feature-text mb-0" data-i18n="hero.f1.text">Find a companion who fits your life.</p>
+                       </div>
+                   </div>
+
+                   <div class="col-12 col-md-4 d-flex align-items-start gap-3">
+                       <i class="fa-solid fa-shield-halved fa-2x"></i>
+                       <div>
+                          <p class="fw-bold mb-0" data-i18n="hero.f2.title">Care comes first</p>
+                          <p class="feature-text mb-0" data-i18n="hero.f2.text">Learn about each pet before taking the next step.</p>
+                       </div>
+                   </div>
+
+                   <div class="col-12 col-md-4 d-flex align-items-start gap-3">
+                       <i class="fa-solid fa-house fa-2x"></i>
+                       <div>
+                          <p class="fw-bold mb-0" data-i18n="hero.f3.title">Support for the journey</p>
+                          <p class="feature-text mb-0" data-i18n="hero.f3.text">Helpful guidance, from first hello to home.</p>
+                       </div>
+                   </div>
+              </div>
+        </div>
+   </section>
+
+
+                                    <!-- ===================== Section 2===================== -->
+
+        <section class="pets-section" id="pets">
+
+            <div class="container">
+
+                <div class="row align-items-end mb-4">
+
+                    <div class="col-md-9">
+                        <h2 data-i18n="pets.title">Meet your new best friend.</h2>
+                        <p class="section-subtitle mb-0" data-i18n="pets.subtitle">Big hearts, little paws, and a whole lot of love to give.</p>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-lg-3">
+
+                        <aside id="pet-filters" class="offcanvas-lg offcanvas-start filter-sidebar" tabindex="-1" aria-labelledby="filters-title">
+
+                            <div class="offcanvas-header">
+                                <h3 class="offcanvas-title" id="filters-title" data-i18n="find.friend">Find your friend</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#pet-filters" aria-label="Close filters" data-i18n-aria-label="filters.closeLabel"></button>
+                            </div>
+
+                            <div class="offcanvas-body">
+
+                                <div class="d-flex flex-column gap-3 w-100">
+
+                                    <div>
+                                        <label for="pet-search" class="form-label" data-i18n="filters.search">Search Pets</label>
+                                        <input type="search" id="pet-search" name="search" value="" class="form-control" placeholder="Name or breed" data-i18n-placeholder="filters.searchPlaceholder">
+                                    </div>
+
+                                    <div>
+                                        <label for="pet-category" class="form-label" data-i18n="filters.type">Animal Type</label>
+                                        <select id="pet-category" name="category" class="form-select">
+                                            <option value="All Animals" data-i18n="filters.allAnimals">All Animals</option>
+                                            <option value="Dogs" data-i18n="pet.dogs">Dogs</option>
+                                            <option value="Cats" data-i18n="pet.cats">Cats</option>
+                                            <option value="Rabbits" data-i18n="pet.rabbits">Rabbits</option>
+                                            <option value="Hamsters" data-i18n="pet.hamsters">Hamsters</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <label for="pet-age" class="form-label" data-i18n="filters.age">Age</label>
+                                        <select id="pet-age" name="age" class="form-select">
+                                            <option value="" data-i18n="filters.allAges">All Ages</option>
+                                            <option value="baby" data-i18n="filters.baby">Baby: under 1 year</option>
+                                            <option value="young" data-i18n="filters.young">Young: 1–2 years</option>
+                                            <option value="adult" data-i18n="filters.adult">Adult: 3–6 years</option>
+                                            <option value="senior" data-i18n="filters.senior">Senior: 7 years and older</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <label for="pet-size" class="form-label" data-i18n="filters.size">Size</label>
+                                        <select id="pet-size" name="size" class="form-select">
+                                            <option value="" data-i18n="filters.allSizes">All Sizes</option>
+                                            <option value="Small" data-i18n="filters.small">Small</option>
+                                            <option value="Medium" data-i18n="filters.medium">Medium</option>
+                                            <option value="Large" data-i18n="filters.large">Large</option>
+                                        </select>
+                                    </div>
+
+                                    <div>
+                                        <label for="pet-color" class="form-label" data-i18n="filters.color">Fur Color</label>
+                                        <select id="pet-color" name="color" class="form-select">
+                                            <option value="" data-i18n="filters.allColors">All Colors</option>
+                                            <option value="White" data-i18n="filters.white">White</option>
+                                            <option value="Black" data-i18n="filters.black">Black</option>
+                                            <option value="Brown" data-i18n="filters.brown">Brown</option>
+                                            <option value="Gray" data-i18n="filters.gray">Gray</option>
+                                            <option value="Orange" data-i18n="filters.orange">Orange</option>
+                                            <option value="Golden" data-i18n="filters.golden">Golden</option>
+                                        </select>
+                                    </div>
+
+                                    <button type="button" id="clear-filters" name="clear" value="clear" class="btn btn-outline-primary w-100" data-i18n="filters.clear">Clear Filters</button>
+
+                                    <button type="button" id="show-pets" class="btn btn-primary w-100 d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#pet-filters">Show pets</button>
+
+                                </div>
+                            </div>
+
+                        </aside>
+                    </div>
+
+                    <div class="col-lg-9">
+
+                        <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+                            <p id="result-count" class="result-count mb-0"></p>
+                            <button type="button" class="btn btn-primary d-lg-none flex-shrink-0" data-bs-toggle="offcanvas" data-bs-target="#pet-filters" data-i18n="filters.open">Filters</button>
+                        </div>
+
+                        <div class="row g-4" id="pet-cards"></div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="modal fade" id="petModal" tabindex="-1" aria-labelledby="petModalTitle" aria-hidden="true">
+
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+
+                <div class="modal-content pet-modal">
+
+                    <button type="button" class="btn-close pet-modal-close" data-bs-dismiss="modal" aria-label="Close" data-i18n-aria-label="common.close"></button>
+
+                    <img id="petModalImg" class="pet-modal-img" src="" alt="">
+
+                    <div class="modal-body">
+                        <div class="small-label" data-i18n="modal.petLabel"><span></span> MEET YOUR POTENTIAL BEST FRIEND</div>
+
+                        <h2 id="petModalTitle"></h2>
+                        <p class="pet-meta" id="petModalMeta"></p>
+                        <p id="petModalText"></p>
+
+                        <p class="demo-note" data-i18n="modal.demoNote">Illustrative profile only. A real shelter would confirm health, behavior, and suitability before adoption.</p>
+
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="goToApply()"><span data-i18n="modal.apply">Apply for</span> <span id="applyName"></span></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+         
+
+                                   <!-- ===================== Section 3===================== -->
+
+        <section id="pets-care" class="d-flex flex-column align-items-center justify-content-center min-vh-100 py-5">
+
+            <div class="pets-info text-center mb-5">
+                <span class="sub-label d-block text-uppercase fw-bold mb-2" data-i18n="care.label">Love goes beyond adoption</span>
+                
+                <h2 class="main-title fw-extrabold mb-3" data-i18n="care.title">Happy pets. Happy humans.</h2>
+                
+                <p class="sub-text text-muted mx-auto" data-i18n="care.subtitle">A little extra care for the ones who make life a little better.</p>
+            </div>
+
+            <div class="container mx-auto">
+                <div class="pets-care-cards row g-4">
+                    
+                    <div class="col-12 col-md-4">
+                        <div class="custom-care-card card shadow-sm p-4 h-100 border-0">
+                            <div class="custom-card-icon d-flex align-items-center justify-content-center rounded-3 mb-4">
+                                <i class="fa-solid fa-shield-heart fs-4" aria-hidden="true"></i> 
+                            </div>
+                            <h3 class="h5 fw-bold mb-3" data-i18n="care.health.title">Pet Health & Wellness</h3>
+                            <p class="text-muted small mb-4" data-i18n="care.health.text">Healthy pets start with small, steady habits. A few daily checks and regular vet visits help you notice problems early.</p>
+                            <ul class="custom-bullet-list small mb-4">
+                                <li class="mb-2" data-i18n="care.health.b1">Routine veterinary checkups</li>
+                                <li class="mb-2" data-i18n="care.health.b2">Vaccinations matched to your pet's needs</li>
+                                <li class="mb-2" data-i18n="care.health.b3">Watch for changes in appetite or behavior</li>
+                                <li class="mb-2" data-i18n="care.health.b4">Fresh water and suitable food</li>
+                            </ul>
+                            <div class="mt-auto" data-bs-toggle="modal" data-bs-target="#healthWellnessModal">
+                                <a href="#" class="custom-learn-btn btn rounded-2 px-4 py-2 text-decoration-none"><span data-i18n="care.learnMore">Learn more</span> <i class="fa-solid fa-arrow-right ms-1 small"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="custom-care-card card shadow-sm p-4 h-100 border-0">
+                            <div class="custom-card-icon d-flex align-items-center justify-content-center rounded-3 mb-4 warm-icon-bg">
+                                <i class="fa-solid fa-scissors fs-4" aria-hidden="true"></i> 
+                            </div>
+                            <h3 class="h5 fw-bold mb-3" data-i18n="care.groom.title">Grooming & Hygiene</h3>
+                            <p class="text-muted small mb-4" data-i18n="care.groom.text">Grooming keeps pets comfortable and lets you spot skin, coat or nail problems early. Every species needs a different routine.</p>
+                            <ul class="custom-bullet-list small mb-4">
+                                <li class="mb-2" data-i18n="care.groom.b1">Brush fur regularly</li>
+                                <li class="mb-2" data-i18n="care.groom.b2">Keep nails at a healthy length</li>
+                                <li class="mb-2" data-i18n="care.groom.b3">Clean gently and safely </li>
+                                <li class="mb-2" data-i18n="care.groom.b4">Use only pet-safe products</li>
+                            </ul>
+                            <div class="mt-auto" data-bs-toggle="modal" data-bs-target="#groomingModal">
+                                <a href="#" class="custom-learn-btn btn rounded-2 px-4 py-2 text-decoration-none"><span data-i18n="care.learnMore">Learn more</span> <i class="fa-solid fa-arrow-right ms-1 small"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="custom-care-card card shadow-sm p-4 h-100 border-0">
+                            <div class="custom-card-icon d-flex align-items-center justify-content-center rounded-3 mb-4">
+                                <i class="fa-regular fa-house fs-4" aria-hidden="true"></i> 
+                            </div>
+                            <h3 class="h5 fw-bold mb-3" data-i18n="care.board.title">Boarding & Daycare</h3>
+                            <p class="text-muted small mb-4" data-i18n="care.board.text">Planning ahead makes time away easier for you and your pet. Learn how to prepare and what to look for in a safe facility.</p>
+                            <ul class="custom-bullet-list small mb-4">
+                                <li class="mb-2" data-i18n="care.board.b1">Prepare your pet before temporary care</li>
+                                <li class="mb-2" data-i18n="care.board.b2">Check cleanliness and supervision</li>
+                                <li class="mb-2" data-i18n="care.board.b3">Share feeding and emergency details</li>
+                                <li class="mb-2" data-i18n="care.board.b4">Reduce stress with familiar items</li>
+                            </ul>
+                            <div class="mt-auto" data-bs-toggle="modal" data-bs-target="#BoardingModal">
+                                <a href="#" class="custom-learn-btn btn rounded-2 px-4 py-2 text-decoration-none"><span data-i18n="care.learnMore">Learn more</span> <i class="fa-solid fa-arrow-right ms-1 small"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <div class="modal fade" id="healthWellnessModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+
+                <div class="custom-modal-card modal-content border-0 overflow-hidden">
+                    
+                        <div class="modal-header-section p-5 position-relative"> 
+                            
+                            <button type="button" class="custom-modal-x-btn" data-bs-dismiss="modal" aria-label="Close" data-i18n-aria-label="common.close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+
+                            <div class="d-flex align-items-start gap-4"> 
+                                
+                                <div class="modal-top-icon d-flex align-items-center justify-content-center rounded-4">
+                                    <i class="fa-solid fa-shield-heart fs-4" aria-hidden="true"></i> 
+                                </div>
+                                
+                                <div class="modal-header-text-content">
+                                    <span class="modal-quick-guide-text text-uppercase fw-bold d-block mb-2" data-i18n="guide.quick">Quick guide</span>
+                                    <h2 class="modal-main-title fw-extrabold mb-2" data-i18n="care.health.title">Pet Health & Wellness</h2>
+                                    <p class="modal-top-desc mb-0" data-i18n="health.desc">Good health is built day by day. Use these tips as a starting point for everyday care.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    <div class="modal-body-section p-4">
+                        <h3 class="modal-section-title fw-extrabold mb-4" data-i18n="health.h1">Everyday health habits</h3>
+
+                        <div class="row g-3 mb-4">
+                            
+                            <!-- كارت 1 -->
+                            <div class="col-md-6">
+                                <div class="modal-inner-card p-3 rounded-3 h-100">
+                                    <h4 class="inner-card-title fw-bold mb-2" data-i18n="care.health.b1">Routine veterinary checkups</h4>
+                                    <span class="inner-card-desc text-muted d-block" data-i18n="health.c1.desc">A regular visit lets a vet check weight, teeth, skin, and heart, and catch small issues before they grow.</span>
+                                </div>
+                            </div>
+
+                            <!-- كارت 2 -->
+                            <div class="col-md-6">
+                                <div class="modal-inner-card p-3 rounded-3 h-100">
+                                    <h4 class="inner-card-title fw-bold mb-2" data-i18n="health.c2.title">Notice changes early</h4>
+                                    <span class="inner-card-desc text-muted d-block" data-i18n="health.c2.desc">Eating less, drinking much more, hiding, unusual tiredness, or changes in droppings are worth a call to your vet.</span>
+                                </div>
+                            </div>
+
+                            <!-- كارت 3 -->
+                            <div class="col-md-6">
+                                <div class="modal-inner-card p-3 rounded-3 h-100">
+                                    <h4 class="inner-card-title fw-bold mb-2" data-i18n="health.c3.title">Food that fits your pet</h4>
+                                    <span class="inner-card-desc text-muted d-block" data-i18n="health.c3.desc">Choose food made for your pet's species and life stage, measure portions, and avoid sudden diet changes.</span>
+                                </div>
+                            </div>
+
+                            <!-- كارت 4 -->
+                            <div class="col-md-6">
+                                <div class="modal-inner-card p-3 rounded-3 h-100">
+                                    <h4 class="inner-card-title fw-bold mb-2" data-i18n="health.c4.title">Vaccinations & parasite control</h4>
+                                    <span class="inner-card-desc text-muted d-block" data-i18n="health.c4.desc">Needs differ by species, age, and lifestyle. Dogs and cats usually follow a vaccine schedule, while rabbits and hamsters have different needs.</span>
+                                </div>
+                            </div>
+
+                            <!-- كارت 5 -->
+                            <div class="col-md-6">
+                                <div class="modal-inner-card p-3 rounded-3 h-100">
+                                    <h4 class="inner-card-title fw-bold mb-2" data-i18n="health.c5.title">Fresh water, every day</h4>
+                                    <span class="inner-card-desc text-muted d-block" data-i18n="health.c5.desc">Refill bowls or bottles daily and wash them often so water is always clean and easy to reach.</span>
+                                </div>
+                            </div>
+
+                            <!-- كارت 6 -->
+                            <div class="col-md-6">
+                                <div class="modal-inner-card p-3 rounded-3 h-100">
+                                    <h4 class="inner-card-title fw-bold mb-2" data-i18n="health.c6.title">Movement and play</h4>
+                                    <span class="inner-card-desc text-muted d-block" data-i18n="health.c6.desc">Daily exercise and enrichment, like walks, toys, tunnels, or a wheel, support both body and mind.</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="modal-notice-card d-flex rounded-3 overflow-hidden mb-4">
+                            <div class="orange-side-bar"></div>
+                            <div class="p-3 w-100">
+                                <h4 class="inner-card-title fw-bold mb-1" data-i18n="guide.remember">Good to remember</h4>
+                                <span class="inner-card-desc text-muted d-block" data-i18n="health.note">Small steps, a big new chapter. Consistent care builds a long, happy life together.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer-section pt-4 d-flex justify-content-end">
+                            <button type="button" class="custom-close-btn btn px-4 py-2" data-bs-dismiss="modal" data-i18n="guide.close">Close</button>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+                <div class="modal fade" id="groomingModal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+
+                    <div class="custom-modal-card modal-content border-0 overflow-hidden">
+                    
+                        <div class="modal-header-section p-5 position-relative"> 
+                            
+                            <button type="button" class="custom-modal-x-btn" data-bs-dismiss="modal" aria-label="Close" data-i18n-aria-label="common.close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+
+                            <div class="d-flex align-items-start gap-4"> 
+                                
+                                <div class="modal-top-icon d-flex align-items-center justify-content-center rounded-4">
+                                    <i class="fa-solid fa-scissors fs-4" aria-hidden="true"></i> 
+                                </div>
+                                
+                                <div class="modal-header-text-content">
+                                    <span class="modal-quick-guide-text text-uppercase fw-bold d-block mb-2" data-i18n="guide.quick">Quick guide</span>
+                                    <h2 class="modal-main-title fw-extrabold mb-2" data-i18n="care.groom.title">Grooming & Hygiene</h2>
+                                    <p class="modal-top-desc mb-0" data-i18n="groom.desc">Short, calm and regular sessions work best. Go slowly, reward your pet, and stop if they are stressed.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    <div class="modal-body-section p-4">
+
+                        <h3 class="modal-section-title fw-extrabold mb-4" data-i18n="groom.h1">The basics</h3>
+
+                        <div class="row g-3 mb-4">
+                            
+                            <!-- كارت 1 -->
+                            <div class="col-md-6">
+                                <div class="modal-inner-card p-3 rounded-3 h-100">
+                                    <h4 class="inner-card-title fw-bold mb-2" data-i18n="groom.c1.title">Brushing</h4>
+                                    <span class="inner-card-desc text-muted d-block" data-i18n="groom.c1.desc">Brushing removes loose hair and tangles and spreads natural oils. Use a brush that suits the coat, and be gentle around the belly and legs.</span>
+                                </div>
+                            </div>
+
+                            <!-- كارت 2 -->
+                            <div class="col-md-6">
+                                <div class="modal-inner-card p-3 rounded-3 h-100">
+                                    <h4 class="inner-card-title fw-bold mb-2" data-i18n="groom.c2.title">Nail care</h4>
+                                    <span class="inner-card-desc text-muted d-block" data-i18n="groom.c2.desc">Trim only the tip with pet nail clippers and avoid the pink area that contains blood vessels. If you are unsure, ask a vet or groomer to show you.</span>
+                                </div>
+                            </div>
+
+                            <!-- كارت 3 -->
+                            <div class="col-md-6">
+                                <div class="modal-inner-card p-3 rounded-3 h-100">
+                                    <h4 class="inner-card-title fw-bold mb-2" data-i18n="groom.c3.title">Cleaning safely</h4>
+                                    <span class="inner-card-desc text-muted d-block" data-i18n="groom.c3.desc">Wipe eyes, ears and paws gently with a soft damp cloth. Never push anything into the ear canal, and do not use human products.</span>
+                                </div>
+                            </div>
+
+                            <!-- كارت 4 -->
+                            <div class="col-md-6">
+                                <div class="modal-inner-card p-3 rounded-3 h-100">
+                                    <h4 class="inner-card-title fw-bold mb-2" data-i18n="groom.c4.title">Pet-safe products</h4>
+                                    <span class="inner-card-desc text-muted d-block" data-i18n="groom.c4.desc">Choose shampoos and tools made for your species. Some human soaps, essential oils and flea products for dogs are harmful to cats and small pets.</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <h3 class="modal-section-title fw-extrabold mb-4" data-i18n="groom.h2">Needs differ by species</h3>
+
+                        <div class="row g-3 mb-4">
+                            
+                            <!-- كارت 1 -->
+                            <div class="col-md-6">
+                                <div class="modal-inner-card p-3 rounded-3 h-100">
+                                    <h4 class="inner-card-title fw-bold mb-2" data-i18n="pet.dogs">Dogs</h4>
+                                    <span class="inner-card-desc text-muted d-block" data-i18n="groom.dogs">Brushing from weekly to daily depending on coat. Occasional baths with dog shampoo, plus regular nail and ear checks.</span>
+                                </div>
+                            </div>
+
+                            <!-- كارت 2 -->
+                            <div class="col-md-6">
+                                <div class="modal-inner-card p-3 rounded-3 h-100">
+                                    <h4 class="inner-card-title fw-bold mb-2" data-i18n="pet.cats">Cats</h4>
+                                    <span class="inner-card-desc text-muted d-block" data-i18n="groom.cats">Cats groom themselves, but brushing reduces hairballs, especially for long coats. Most cats rarely need baths.</span>
+                                </div>
+                            </div>
+
+                            <!-- كارت 3 -->
+                            <div class="col-md-6">
+                                <div class="modal-inner-card p-3 rounded-3 h-100">
+                                    <h4 class="inner-card-title fw-bold mb-2" data-i18n="pet.rabbits">Rabbits</h4>
+                                    <span class="inner-card-desc text-muted d-block" data-i18n="groom.rabbits">Brush gently, more often while shedding. Avoid water baths because they can cause shock and stress, and ask a vet about nails and teeth.</span>
+                                </div>
+                            </div>
+
+                            <!-- كارت 4 -->
+                            <div class="col-md-6">
+                                <div class="modal-inner-card p-3 rounded-3 h-100">
+                                    <h4 class="inner-card-title fw-bold mb-2" data-i18n="pet.hamsters">Hamsters</h4>
+                                    <span class="inner-card-desc text-muted d-block" data-i18n="groom.hamsters">Hamsters keep themselves clean and should not be bathed in water. Offer a small dish of chinchilla sand and spot-clean the cage.</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="modal-notice-card d-flex rounded-3 overflow-hidden mb-4">
+                            <div class="orange-side-bar"></div>
+                            <div class="p-3 w-100">
+                                <h4 class="inner-card-title fw-bold mb-1" data-i18n="guide.remember">Good to remember</h4>
+                                <span class="inner-card-desc text-muted d-block" data-i18n="groom.note">Stop and contact a vet if you find wounds, lumps, sore skin, parasites, bleeding nails or if your pet seems in pain. Never use scissors near the skin of a wriggling pet.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer-section pt-4 d-flex justify-content-end">
+                            <button type="button" class="custom-close-btn btn px-4 py-2" data-bs-dismiss="modal" data-i18n="guide.close">Close</button>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+                <div class="modal fade" id="BoardingModal" tabindex="-1" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+
+                    <div class="custom-modal-card modal-content border-0 overflow-hidden">
+                    
+                        <div class="modal-header-section p-5 position-relative"> 
+                            
+                            <button type="button" class="custom-modal-x-btn" data-bs-dismiss="modal" aria-label="Close" data-i18n-aria-label="common.close">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+
+                            <div class="d-flex align-items-start gap-4"> 
+                                
+                                <div class="modal-top-icon d-flex align-items-center justify-content-center rounded-4">
+                                    <i class="fa-regular fa-house fs-4" aria-hidden="true"></i> 
+                                </div>
+                                
+                                <div class="modal-header-text-content">
+                                    <span class="modal-quick-guide-text text-uppercase fw-bold d-block mb-2" data-i18n="guide.quick">Quick guide</span>
+                                    <h2 class="modal-main-title fw-extrabold mb-2" data-i18n="care.board.title">Boarding & Daycare</h2>
+                                    <p class="modal-top-desc mb-0" data-i18n="board.desc">Whether it is a day out or a week away, these steps help you choose carefully and prepare well.</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    <div class="modal-body-section p-4">
+
+                    <div class="modal-warning-card d-flex align-items-start gap-3 rounded-3 p-3 mb-4">
+                        <i class="fa-solid fa-shield-heart warning-icon" aria-hidden="true"></i>
+
+                        <p class="modal-warning-text mb-0" data-i18n="board.warning">
+                            Pawsy currently offers educational information only. We do not provide bookings, and we do not list or verify any boarding or daycare facilities.
+                        </p>
+                    </div>
+
+
+                        <h3 class="modal-section-title fw-extrabold mb-4" data-i18n="board.h1">Preparing your pet</h3>
+
+                        <div class="row g-3 mb-4">
+                            
+                            <!-- كارت 1 -->
+                            <div class="col-md-6">
+                                <div class="modal-inner-card p-3 rounded-3 h-100">
+                                    <h4 class="inner-card-title fw-bold mb-2" data-i18n="board.c1.title">Check health and records</h4>
+                                    <span class="inner-card-desc text-muted d-block" data-i18n="board.c1.desc">Make sure vaccinations and parasite treatments are up to date, and bring any medication with clear written dosing.</span>
+                                </div>
+                            </div>
+
+                            <!-- كارت 2 -->
+                            <div class="col-md-6">
+                                <div class="modal-inner-card p-3 rounded-3 h-100">
+                                    <h4 class="inner-card-title fw-bold mb-2" data-i18n="board.c2.title">Written feeding instructions</h4>
+                                    <span class="inner-card-desc text-muted d-block" data-i18n="board.c2.desc">List food type, portions, times, treats and allergies. Bring the usual food to avoid stomach upsets.</span>
+                                </div>
+                            </div>
+
+                            <!-- كارت 3 -->
+                            <div class="col-md-6">
+                                <div class="modal-inner-card p-3 rounded-3 h-100">
+                                    <h4 class="inner-card-title fw-bold mb-2" data-i18n="board.c3.title">Emergency contacts</h4>
+                                    <span class="inner-card-desc text-muted d-block" data-i18n="board.c3.desc">Leave your phone number, a backup contact who can be reached, and your vet's details.</span>
+                                </div>
+                            </div>
+
+                            <!-- كارت 4 -->
+                            <div class="col-md-6">
+                                <div class="modal-inner-card p-3 rounded-3 h-100">
+                                    <h4 class="inner-card-title fw-bold mb-2" data-i18n="board.c4.title">Reduce stress</h4>
+                                    <span class="inner-card-desc text-muted d-block" data-i18n="board.c4.desc">Pack a familiar blanket or toy, keep goodbyes calm, and try a short trial stay first so the place feels less new.</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <h3 class="modal-section-title fw-extrabold mb-4" data-i18n="board.h2">Evaluating a facility</h3>
+
+                        <div class="row g-3 mb-4">
+                            
+                            <!-- كارت 1 -->
+                            <div class="col-md-6">
+                                <div class="modal-inner-card p-3 rounded-3 h-100">
+                                    <h4 class="inner-card-title fw-bold mb-2" data-i18n="board.c5.title">Cleanliness</h4>
+                                    <span class="inner-card-desc text-muted d-block" data-i18n="board.c5.desc">Areas should look and smell clean, with fresh water, waste removed and a clear cleaning routine.</span>
+                                </div>
+                            </div>
+
+                            <!-- كارت 2 -->
+                            <div class="col-md-6">
+                                <div class="modal-inner-card p-3 rounded-3 h-100">
+                                    <h4 class="inner-card-title fw-bold mb-2" data-i18n="board.c6.title">Supervision</h4>
+                                    <span class="inner-card-desc text-muted d-block" data-i18n="board.c6.desc">Ask how many animals each staff member watches, whether play groups are supervised, and what happens overnight.</span>
+                                </div>
+                            </div>
+
+                            <!-- كارت 3 -->
+                            <div class="col-md-6">
+                                <div class="modal-inner-card p-3 rounded-3 h-100">
+                                    <h4 class="inner-card-title fw-bold mb-2" data-i18n="board.c7.title">Appropriate housing</h4>
+                                    <span class="inner-card-desc text-muted d-block" data-i18n="board.c7.desc">Space should fit the species: separate areas for cats, dogs and small animals, safe fencing, shade, and secure cages for rabbits and hamsters.</span>
+                                </div>
+                            </div>
+
+                            <!-- كارت 4 -->
+                            <div class="col-md-6">
+                                <div class="modal-inner-card p-3 rounded-3 h-100">
+                                    <h4 class="inner-card-title fw-bold mb-2" data-i18n="board.c8.title">Emergency plan</h4>
+                                    <span class="inner-card-desc text-muted d-block" data-i18n="board.c8.desc">A good facility can explain how it handles illness or injury and which vet it works with.</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="modal-notice-card d-flex rounded-3 overflow-hidden mb-4">
+                            <div class="orange-side-bar"></div>
+                            <div class="p-3 w-100">
+                                <h4 class="inner-card-title fw-bold mb-1" data-i18n="guide.remember">Good to remember</h4>
+                                <span class="inner-card-desc text-muted d-block" data-i18n="board.note">Visit in person when possible, ask questions, and trust your instincts. If anything feels unsafe, choose another option.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer-section pt-4 d-flex justify-content-end">
+                            <button type="button" class="custom-close-btn btn px-4 py-2" data-bs-dismiss="modal" data-i18n="guide.close">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- ========================================== -->
+    <!-- 1. Adoption Steps Section -->
+    <!-- ========================================== -->
+    <section id="adoption-steps" class="py-5 my-3">
+      <div class="container py-4">
+        <!-- Section Header -->
+        <div class="text-center mb-5">
+          <span class="text-uppercase fw-bold d-block mb-2" style="font-size: 11px; color: var(--text-soft); letter-spacing: 1.5px;" data-i18n="steps.label">
+            SMALL STEPS. A BIG NEW CHAPTER.
+          </span>
+          <h2 class="fw-extrabold display-5 mb-2" style="color: var(--text-main); font-weight: 800;" data-i18n="steps.title">
+            A forever home starts with hello.
+          </h2>
+          <p style="color: var(--text-soft); font-size: 16px;" data-i18n="steps.subtitle">
+            A thoughtful journey, made a little simpler.
+          </p>
+        </div>
+
+        <!-- 4 Step Cards -->
+        <div class="row g-4">
+          <!-- Step 01 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 p-4 border-0 rounded-4 step-card shadow-sm" style="background-color: var(--bg-card);">
+              <div class="step-badge mb-3">01</div>
+              <h3 class="h5 fw-bold mb-2" style="color: var(--text-main);" data-i18n="find.friend">Find your friend</h3>
+              <p class="mb-0" style="color: var(--text-soft); font-size: 14px; line-height: 1.6;" data-i18n="steps.s1.text">
+                Explore the profiles and get to know a pet who speaks to your heart.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 p-4 border-0 rounded-4 step-card shadow-sm" style="background-color: var(--bg-card);">
+              <div class="step-badge mb-3">02</div>
+              <h3 class="h5 fw-bold mb-2" style="color: var(--text-main);" data-i18n="steps.s2.title">Tell us about you</h3>
+              <p class="mb-0" style="color: var(--text-soft); font-size: 14px; line-height: 1.6;" data-i18n="steps.s2.text">
+                Complete the demo application with your home and care plans.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 p-4 border-0 rounded-4 step-card shadow-sm" style="background-color: var(--bg-card);">
+              <div class="step-badge mb-3">03</div>
+              <h3 class="h5 fw-bold mb-2" style="color: var(--text-main);" data-i18n="steps.s3.title">Meet & connect</h3>
+              <p class="mb-0" style="color: var(--text-soft); font-size: 14px; line-height: 1.6;" data-i18n="steps.s3.text">
+                In a real adoption, a shelter would arrange a visit and check your match.
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <div class="card h-100 p-4 border-0 rounded-4 step-card shadow-sm" style="background-color: var(--bg-card);">
+              <div class="step-badge mb-3">04</div>
+              <h3 class="h5 fw-bold mb-2" style="color: var(--text-main);" data-i18n="steps.s4.title">Welcome them home</h3>
+              <p class="mb-0" style="color: var(--text-soft); font-size: 14px; line-height: 1.6;" data-i18n="steps.s4.text">
+                Prepare a safe space, build a routine, and start your friendship grow.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 2. "Every pet deserves a place to belong" Section -->
+    <!-- ========================================== -->
+<section id="about-section" class="py-5">
+        <div class="container py-4">
+        <div class="row align-items-center g-5">
+          <!-- Image with rounded curved corners -->
+          <div class="col-12 col-lg-6">
+            <div class="overflow-hidden shadow-sm" style="border-radius: 40px;">
+              <img src="images/about-dog-and-cat.webp" alt="Dog and Cat Cuddling" data-i18n-alt="about.alt" class="w-100 object-fit-cover" style="height: 380px;">
+            </div>
+          </div>
+          <!-- Text Content -->
+          <div class="col-12 col-lg-6">
+            <span class="text-uppercase fw-bold d-block mb-2" style="font-size: 11px; color: var(--text-soft); letter-spacing: 1.5px;" data-i18n="about.label">
+              BIG HEARTS BEHIND LITTLE PAWS
+            </span>
+            <h2 class="fw-extrabold display-6 mb-3" style="color: var(--text-main); font-weight: 800;" data-i18n="about.title">
+              Every pet deserves a place to belong.
+            </h2>
+            <p class="mb-3" style="color: var(--text-soft); font-size: 15px; line-height: 1.7;" data-i18n="about.p1">
+              Pawsy is built around a simple belief: caring for an animal begins with understanding them. We bring adoption inspiration and practical care guidance together in one welcoming place.
+            </p>
+            <p class="mb-4" style="color: var(--text-soft); font-size: 15px; line-height: 1.7;" data-i18n="about.p2">
+              Created by a university team of five, this front-end portfolio project celebrates responsible adoption. All profiles are illustrative; Pawsy is not a shelter or a live adoption service.
+            </p>
+            <a href="#adoption-form" class="text-decoration-none fw-bold d-inline-flex align-items-center gap-2" style="color: var(--primary);" data-i18n="about.link">
+              Get to know the journey &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 3. Dark Green CTA Banner Section -->
+    <!-- ========================================== -->
+<section id="cta-banner" class="py-4">
+        <div class="container">
+        <div class="p-5 text-center rounded-5 position-relative overflow-hidden text-white" style="background-color: var(--primary);">
+          <div class="position-relative z-1 py-4">
+            <span class="text-uppercase fw-semibold d-block mb-2" style="font-size: 11px; letter-spacing: 1.5px; opacity: 0.85;" data-i18n="cta.label">
+              A FOREVER FRIEND IS WAITING
+            </span>
+            <h2 class="fw-extrabold display-5 mb-3 text-white" style="font-weight: 800;" data-i18n="cta.title">
+              Open your heart.<br>Change their whole world.
+            </h2>
+            <p class="mx-auto mb-4" style="max-width: 500px; font-size: 15px; opacity: 0.9;" data-i18n="cta.text">
+              You don't have to be perfect. Just ready to love. Give a pet a second chance, and find a friend for life.
+            </p>
+            <a href="#adoption-form" class="btn btn-lg fw-bold px-4 py-3 rounded-pill shadow-sm d-inline-flex align-items-center gap-2" style="background-color: var(--secondary); color: var(--text-on-primary); border: none;" data-i18n="cta.button">
+              Let's find your friend &rarr;
+            </a>
+            <div class="mt-3" style="font-size: 12px; opacity: 0.8;" data-i18n="cta.small">
+              Adopt love. Make a difference.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 4. Adoption Form Section -->
+    <!-- ========================================== -->
+    <section id="adoption-form" class="py-5 my-3">
+      <div class="container py-4">
+        <div class="row g-5 align-items-start">
+          
+          <!-- Left Column: Title & Info Card -->
+          <div class="col-12 col-lg-5">
+            <span class="text-uppercase fw-bold d-block mb-2" style="font-size: 11px; color: var(--text-soft); letter-spacing: 1.5px;" data-i18n="form.label">
+              YOUR FIRST HELLO
+            </span>
+            <h2 class="fw-extrabold display-5 mb-3" style="color: var(--text-main); font-weight: 800;" data-i18n="form.title">
+              A little about you.<br>
+              A big step for them.
+            </h2>
+            <p class="mb-4" style="color: var(--text-soft); font-size: 16px; line-height: 1.6;" data-i18n="form.intro">
+              Ready to imagine life with your new best friend? Tell us about yourself and the home you could offer.
+            </p>
+
+            <!-- Info Box -->
+            <div class="p-4 rounded-4 border-0 d-flex gap-3 align-items-start shadow-sm demo-alert-box" style="background-color: var(--bg-soft-green);">
+              <div class="fs-4 shield-icon" style="color: var(--primary);">🛡️</div>
+              <div>
+                <h4 class="h6 fw-bold mb-1" style="color: var(--primary);" data-i18n="form.demoTitle">A safe, demo-only experience</h4>
+                <p class="mb-0" style="color: var(--text-soft); font-size: 13px; line-height: 1.6;" data-i18n="form.demoText">
+                  No application is sent or stored. Please use fictional details; this is a student portfolio, not a real adoption service.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Form Inputs -->
+          <div class="col-12 col-lg-7">
+            <div class="card p-4 p-md-5 border-0 shadow-sm rounded-4" style="background-color: var(--bg-card);">
+              <form id="pawsyAdoptionForm" novalidate>
+                <div class="row g-3">
+                  <!-- Full Name -->
+                  <div class="col-12 col-md-6">
+                    <label for="fullName" class="form-label small fw-bold" style="color: var(--text-main);" data-i18n="form.fullName">Full name</label>
+                    <input type="text" class="form-control form-control-lg custom-form-input" id="fullName" placeholder="">
+                    <div class="error-msg text-danger small mt-1 d-none" id="fullNameError" data-i18n="form.fullNameError">Please enter your full name.</div>
+                  </div>
+
+                  <!-- Email Address -->
+                  <div class="col-12 col-md-6">
+                    <label for="emailInput" class="form-label small fw-bold" style="color: var(--text-main);" data-i18n="form.email">Email address</label>
+                    <input type="email" class="form-control form-control-lg custom-form-input" id="emailInput" placeholder="">
+                    <div class="error-msg text-danger small mt-1 d-none" id="emailError" data-i18n="form.emailError">Please enter a valid email address.</div>
+                  </div>
+
+                  <!-- Phone Number -->
+                  <div class="col-12 col-md-6">
+                    <label for="phoneInput" class="form-label small fw-bold" style="color: var(--text-main);" data-i18n="form.phone">Phone number</label>
+                    <input type="tel" class="form-control form-control-lg custom-form-input" id="phoneInput" placeholder="">
+                    <div class="error-msg text-danger small mt-1 d-none" id="phoneError" data-i18n="form.phoneError">Please enter a valid phone number.</div>
+                  </div>
+
+                  <!-- Potential Friend Select -->
+                  <div class="col-12 col-md-6">
+                    <label for="petSelect" class="form-label small fw-bold" style="color: var(--text-main);" data-i18n="form.pet">Your potential friend</label>
+                    <select class="form-select form-select-lg custom-form-input" id="petSelect">
+                      <option value="" selected disabled data-i18n="form.choosePet">Choose a pet</option>
+                      <option value="milo" data-i18n="form.optMilo">Milo - Golden Retriever</option>
+                      <option value="luna" data-i18n="form.optLuna">Luna - Domestic Short Hair</option>
+                      <option value="coco" data-i18n="form.optCoco">Coco - Mini Lop Rabbit</option>
+                      <option value="biscuit" data-i18n="form.optBiscuit">Biscuit - Syrian Hamster</option>
+                    </select>
+                    <div class="error-msg text-danger small mt-1 d-none" id="petSelectError" data-i18n="form.petError">Please select a pet.</div>
+                  </div>
+
+                  <!-- Textarea -->
+                  <div class="col-12">
+                    <label for="homeDetails" class="form-label small fw-bold" style="color: var(--text-main);" data-i18n="form.home">Tell us about their future home</label>
+                    <textarea class="form-control custom-form-input" id="homeDetails" rows="4" placeholder="Your space, daily routine, and experience with pets..." data-i18n-placeholder="form.homePlaceholder"></textarea>
+                    <div class="error-msg text-danger small mt-1 d-none" id="homeDetailsError" data-i18n="form.homeError">Please provide some details about your home.</div>
+                  </div>
+
+                  <!-- Confirmation Checkbox -->
+                  <div class="col-12 mt-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="demoCheckbox" style="cursor: pointer;">
+                      <label class="form-check-label small" for="demoCheckbox" style="color: var(--text-soft); cursor: pointer;" data-i18n="form.checkbox">
+                        I understand that pet adoption is a long-term commitment and this form is a demo only.
+                      </label>
+                    </div>
+                    <div class="error-msg text-danger small mt-1 d-none" id="checkboxError" data-i18n="form.checkboxError">You must agree before submitting.</div>
+                  </div>
+
+                  <!-- Submit Button -->
+                  <div class="col-12 mt-4">
+                    <button type="submit" class="btn btn-submit-pawsy w-100 py-3 fw-bold text-white rounded-3 shadow-sm" id="submitBtn" data-i18n="form.submit">
+                      Submit demo application &rarr;
+                    </button>
+                    <p class="text-center text-muted small mt-3" style="font-size: 12px;" data-i18n="form.note">
+                      Nothing is sent. Your information stays on this page.
+                    </p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    </main>
+    <!-- Success Modal -->
+  <div class="modal fade" id="adoptionSuccessModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-center p-4 rounded-4 border-0 shadow" style="background-color: var(--bg-card); color: var(--text-main);">
+        <div class="modal-body py-4">
+          <div class="display-4 mb-3">🐾</div>
+          <h3 class="fw-bold mb-2" data-i18n="success.title">Application Received!</h3>
+          <p class="mb-4" style="color: var(--text-soft); font-size: 15px;" data-i18n="success.text">
+            Thank you for exploring the demo. In a real platform, the team would get back to you shortly!
+          </p>
+          <button type="button" class="btn btn-submit-pawsy text-white px-5 py-2 rounded-pill fw-bold" data-bs-dismiss="modal" data-i18n="success.close">Close Demo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- ========================================== -->
+  <!-- 5. Creative Footer Section -->
+  <!-- ========================================== -->
+  <footer class="pawsy-footer text-white py-5 position-relative overflow-hidden" style="background-color: var(--primary);">
+    <div class="container py-4">
+      <div class="row g-5 justify-content-between align-items-start">
+        
+        <!-- Col 1: Brand & Tagline -->
+        <div class="col-12 col-md-4">
+          <div class="d-flex align-items-center gap-2 mb-3 footer-brand cursor-pointer">
+            <span class="fs-3 paw-icon">🐾</span>
+            <span class="fw-extrabold fs-3 tracking-tight">pawsy<span style="color: var(--secondary);">.</span></span>
+          </div>
+          <p class="text-white-50 small mb-0" style="line-height: 1.7; max-width: 310px;" data-i18n="footer.tagline">
+            Connecting little paws with big hearts. Because every pet deserves a place to belong.
+          </p>
+        </div>
+
+        <!-- Col 2: Find your friend -->
+        <div class="col-6 col-md-2">
+          <h6 class="fw-bold mb-3 text-white text-uppercase" style="font-size: 12px; letter-spacing: 1px;" data-i18n="find.friend">Find your friend</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+            <li><a href="#adoption-form" class="footer-link" data-i18n="footer.adopt">Pets for adoption</a></li>
+            <li><a href="#adoption-steps" class="footer-link" data-i18n="footer.promise">Our adoption promise</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: A little extra care -->
+        <div class="col-6 col-md-2">
+          <h6 class="fw-bold mb-3 text-white text-uppercase" style="font-size: 12px; letter-spacing: 1px;" data-i18n="footer.care">A little extra care</h6>
+          <ul class="list-unstyled d-flex flex-column gap-2 mb-0">
+            <li><a href="#" class="footer-link" data-i18n="footer.services">Pet care services</a></li>
+            <li><a href="#" class="footer-link" data-i18n="footer.contact">Get in touch</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Portfolio Concept & Animated Heart -->
+        <div class="col-12 col-md-3">
+          <div class="d-flex align-items-center gap-2 mb-2">
+            <i class="fa-solid fa-heart footer-heart"></i>
+            <span class="fw-semibold small text-white" data-i18n="footer.made">Made for the love of pets.</span>
+          </div>
+          <p class="text-white-50 small mb-0" style="font-size: 13px;" data-i18n="footer.concept">A student portfolio concept.</p>
+        </div>
+
+      </div>
+
+      <!-- Divider Line -->
+      <hr class="border-secondary my-4 opacity-25">
+
+      <!-- Bottom Bar -->
+      <div class="row align-items-center g-3">
+        <div class="col-12 col-md-6 text-center text-md-start">
+          <p class="text-white-50 small mb-0" data-i18n="footer.copy">© 2026 Pawsy. All paws welcome. 💚</p>
+        </div>
+        <div class="col-12 col-md-6 text-center text-md-end">
+          <p class="text-white-50 small mb-0 footer-wagging" data-i18n="footer.wag">More love. More wagging tails. ✨</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script>i18n.init();</script>
+    <script src="./JS/all.min.js"></script>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/script.js"></script>
+       <script src="JS/adoption.js"></script>
+
+</body>
+
+</html>

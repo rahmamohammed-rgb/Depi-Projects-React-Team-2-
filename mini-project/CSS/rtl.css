@@ -1,0 +1,167 @@
+/* ==========================================================================
+   rtl.css - extra styles used ONLY when the page is in Arabic
+   (JS/i18n.js sets <html lang="ar" dir="rtl">).
+
+   Why this file exists: the project uses the standard left-to-right Bootstrap
+   build, so a few things that are written as "left" / "right" must be mirrored
+   by hand. Every rule starts with html[dir="rtl"], so nothing here can affect
+   the English (left-to-right) page.
+   ========================================================================== */
+
+
+/* --- Arabic letters must stay joined: never add letter-spacing ------------ */
+html[lang="ar"] *,
+html[lang="ar"] *::before,
+html[lang="ar"] *::after {
+  letter-spacing: normal !important;
+}
+
+
+/* --- Bootstrap spacing helpers used in index.html (ms-*, me-*) ------------ */
+html[dir="rtl"] .ms-auto { margin-left: 0 !important; margin-right: auto !important; }
+html[dir="rtl"] .ms-1    { margin-left: 0 !important; margin-right: 0.25rem !important; }
+html[dir="rtl"] .ms-2    { margin-left: 0 !important; margin-right: 0.5rem !important; }
+html[dir="rtl"] .me-2    { margin-right: 0 !important; margin-left: 0.5rem !important; }
+/* the dark-mode and language buttons use both classes together: keep both sides */
+html[dir="rtl"] .ms-2.me-2 { margin-right: 0.5rem !important; margin-left: 0.5rem !important; }
+
+/* footer bottom bar: "start" and "end" swap sides */
+@media (min-width: 768px) {
+  html[dir="rtl"] .text-md-start { text-align: right !important; }
+  html[dir="rtl"] .text-md-end   { text-align: left !important; }
+}
+
+
+/* --- Logos are not mirrored: keep the icon + "Pawsy." in their usual order - */
+html[dir="rtl"] .navbar-brand {
+  direction: ltr;
+  unicode-bidi: isolate;
+  margin-right: 0;
+  margin-left: var(--bs-navbar-brand-margin-end);
+}
+html[dir="rtl"] .navbar-brand .me-2 {
+  margin-left: 0 !important;
+  margin-right: 0.5rem !important;
+}
+html[dir="rtl"] .footer-brand {
+  direction: ltr;
+  justify-content: flex-end;
+}
+
+
+/* --- Arrow icons point the other way ------------------------------------- */
+html[dir="rtl"] .fa-arrow-right,
+html[dir="rtl"] .pet-button svg {
+  transform: scaleX(-1);
+}
+/* footer links slide toward the reading direction on hover */
+html[dir="rtl"] .footer-link:hover {
+  transform: translateX(-6px);
+}
+
+
+/* --- Elements placed with left / right in main.css ------------------------ */
+html[dir="rtl"] .pet-badge          { left: auto; right: 10px; }
+html[dir="rtl"] .favorite           { right: auto; left: 13px; }
+html[dir="rtl"] .pet-modal-close    { right: auto; left: 14px; }
+html[dir="rtl"] .custom-modal-x-btn { right: auto; left: 1.5rem; }
+
+html[dir="rtl"] .modal-header-section > .d-flex {
+  padding-right: 0;
+  padding-left: 2.75rem;
+}
+
+html[dir="rtl"] .custom-bullet-list li {
+  padding-left: 0;
+  padding-right: 1.25rem;
+}
+html[dir="rtl"] .custom-bullet-list li::before {
+  left: auto;
+  right: 0;
+}
+
+@media (max-width: 767.98px) {
+  html[dir="rtl"] .custom-modal-x-btn { left: 1rem; }
+  html[dir="rtl"] .modal-header-section > .d-flex { padding-right: 0; padding-left: 2rem; }
+}
+@media (max-width: 359.98px) {
+  html[dir="rtl"] .modal-header-section > .d-flex { padding-right: 0; padding-left: 1.75rem; }
+}
+
+
+/* --- Bootstrap form controls (arrow / icon / checkbox sides) -------------- */
+/* drop-down arrow moves to the left */
+html[dir="rtl"] .form-select {
+  padding-right: 0.75rem;
+  padding-left: 2.25rem;
+  background-position: left 0.75rem center;
+}
+html[dir="rtl"] .form-select-lg {
+  padding-right: 1rem;
+  padding-left: 2.25rem;
+}
+
+/* red "invalid" icon moves to the left */
+html[dir="rtl"] .form-control.is-invalid {
+  padding-right: 0.75rem;
+  padding-left: calc(1.5em + 0.75rem);
+  background-position: left calc(0.375em + 0.1875rem) center;
+}
+html[dir="rtl"] .form-control-lg.is-invalid {
+  padding-right: 1rem;
+}
+html[dir="rtl"] textarea.form-control.is-invalid {
+  padding-right: 0.75rem;
+  padding-left: calc(1.5em + 0.75rem);
+  background-position: top calc(0.375em + 0.1875rem) left calc(0.375em + 0.1875rem);
+}
+html[dir="rtl"] .form-select.is-invalid:not([multiple]):not([size]) {
+  padding-right: 0.75rem;
+  padding-left: 4.125rem;
+  background-position: left 0.75rem center, center left 2.25rem;
+}
+html[dir="rtl"] .form-select-lg.is-invalid:not([multiple]):not([size]) {
+  padding-right: 1rem;
+}
+
+/* checkbox sits on the right of its label */
+html[dir="rtl"] .form-check {
+  padding-left: 0;
+  padding-right: 1.5em;
+}
+html[dir="rtl"] .form-check .form-check-input {
+  float: right;
+  margin-left: 0;
+  margin-right: -1.5em;
+}
+
+/* e-mail and phone are typed left-to-right even in Arabic (keeps "@", "+", "." in order) */
+html[dir="rtl"] input[type="email"],
+html[dir="rtl"] input[type="tel"] {
+  direction: ltr;
+  text-align: right;
+}
+html[dir="rtl"] input[type="email"]::placeholder,
+html[dir="rtl"] input[type="tel"]::placeholder {
+  text-align: right;
+}
+
+
+/* --- Mobile filter drawer opens from the right in Arabic ------------------ */
+html[dir="rtl"] .offcanvas-header .btn-close {
+  margin-left: calc(var(--bs-offcanvas-padding-x) * -0.5);
+  margin-right: auto;
+}
+@media (max-width: 991.98px) {
+  html[dir="rtl"] .offcanvas-lg.offcanvas-start {
+    left: auto;
+    right: 0;
+    border-right: 0;
+    border-left: var(--bs-offcanvas-border-width) solid var(--bs-offcanvas-border-color);
+    transform: translateX(100%);
+  }
+  html[dir="rtl"] .offcanvas-lg.offcanvas-start.show:not(.hiding),
+  html[dir="rtl"] .offcanvas-lg.offcanvas-start.showing {
+    transform: none;
+  }
+}
