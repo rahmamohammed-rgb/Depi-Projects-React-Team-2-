@@ -6,7 +6,7 @@ Pawsy is a responsive, front-end landing page that helps visitors discover pets 
 
 ## 🌐 Live Demo
 
-🔗 **[View Pawsy Website](https://rahmamohammed-rgb.github.io/Depi-Projects-React-Team-2-/
+🔗 **[View Pawsy Website](https://rahmamohammed-rgb.github.io/Depi-Projects-React-Team-2-/mini-project/
 )**
 ## 👩‍💻 Team – React Team 2
 
